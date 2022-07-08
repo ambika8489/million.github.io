@@ -3,13 +3,20 @@ import { RouterModule, Routes } from '@angular/router';
 import {InitialPageComponent} from './componett/initial-page/initial-page.component';
 import {RegistrationComponent} from './componett/registration/registration.component';
 import {LoginComponent} from './componett/login/login.component';
+import {ProductsComponent} from './componett/products/products.component';
+import {ContactComponent} from './componett/contact/contact.component';
+
 
 
 const routes: Routes = [
-  { path: '', component: InitialPageComponent },
+  { path: 'home', component: InitialPageComponent },
   { path: 'general', component: RegistrationComponent },
   { path: 'neurology', component: LoginComponent },
+  { path: 'products', component: ProductsComponent },
+  { path: 'contact', component: ContactComponent },
 
+  
+  
   
 ];
 

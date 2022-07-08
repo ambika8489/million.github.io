@@ -14,4 +14,14 @@ export class AppComponent {
   neurology(){
     this.router.navigate(["/neurology"]);
   }
+
+  home(){
+    this.router.navigate(["/home"]);
+  }
+  product(){
+    this.router.navigate(["/products"]);
+  }
+  contact(){
+    this.router.navigate(["/contact"]);
+  }
 }

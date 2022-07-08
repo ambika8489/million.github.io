@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { InitialPageComponent } from './componett/initial-page/initial-page.component';
 import { RegistrationComponent } from './componett/registration/registration.component';
 import { LoginComponent } from './componett/login/login.component';
+import { ProductsComponent } from './componett/products/products.component';
+import { ContactComponent } from './componett/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InitialPageComponent,
     RegistrationComponent,
-    LoginComponent
+    LoginComponent,
+    ProductsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

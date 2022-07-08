@@ -15,10 +15,5 @@ export class InitialPageComponent implements OnInit {
 
 
 
-  neurology(){
-    this.router.navigate(["/neurology"]);
-  }
-  general(){
-    this.router.navigate(["/general"]);
-  }
+ 
 }

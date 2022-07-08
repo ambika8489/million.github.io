@@ -1,39 +1,4 @@
-<!-- <nav class="navbar navbar-expand-lg navbar-dark fixed">
-  <a class="navbar-brand fontfor_living" href="#">
-    &nbsp;<img src="./assets/images/favicon.jpg" height="50px" />&nbsp; Million Health Care
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" id="color_for_headings" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="color_for_headings" href="#">About us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="color_for_headings" href="#services">Products</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" id="color_for_headings" href="#">Disease Profile</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" id="color_for_headings" href="#blog">Gallery</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" id="color_for_headings" href="#">Careers</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" id="color_for_headings" href="#">Contact</a>
-      </li>
-      
-    </ul>
-  
-  </div>
-</nav> -->
 <nav class="navbar">
   <div class="container-fluid">
       <div>
@@ -42,13 +7,13 @@
           </a>
       </div>
       <div class="nav navbar-nav1">
-          <a  class="btn">Home</a>
+          <a  (click)="home()" class="btn">Home</a>
           <a  class="btn">About us</a>
-          <a  class="btn" href="#services">Products</a>
-          <a class="btn " (click)="neurology()">Disease Profile</a>
-          <a href="#" class="btn">Gallery</a>
-          <a href="#" class="btn">Careers</a>
-          <a class="btn" href="#contact">Contact</a>
+          <a  class="btn" (click)="product()">Products</a>
+          <a class="btn " >Disease Profile</a>
+          <a class="btn">Gallery</a>
+          <a class="btn">Careers</a>
+          <a class="btn" (click)="contact()">Contact</a>
       </div>
   </div>
 </nav>
