@@ -11,7 +11,9 @@ import {AboutComponent} from './componett/about/about.component';
 
 const routes: Routes = [
   { path: 'home', component: InitialPageComponent },
+  { path: 'million', component: InitialPageComponent },
   { path: '', component: InitialPageComponent },
+
   { path: 'general', component: RegistrationComponent },
   { path: 'neurology', component: LoginComponent },
   { path: 'products', component: ProductsComponent },
