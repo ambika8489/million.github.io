@@ -24,4 +24,8 @@ export class AppComponent {
   contact(){
     this.router.navigate(["/contact"]);
   }
+  aboutus(){
+    this.router.navigate(["/aboutus"]);
+
+  }
 }

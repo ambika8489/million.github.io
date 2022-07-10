@@ -8,6 +8,7 @@ import { RegistrationComponent } from './componett/registration/registration.com
 import { LoginComponent } from './componett/login/login.component';
 import { ProductsComponent } from './componett/products/products.component';
 import { ContactComponent } from './componett/contact/contact.component';
+import { AboutComponent } from './componett/about/about.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ContactComponent } from './componett/contact/contact.component';
     RegistrationComponent,
     LoginComponent,
     ProductsComponent,
-    ContactComponent
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
