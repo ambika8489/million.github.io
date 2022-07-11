@@ -1,12 +1,13 @@
 
 <nav class="navbar">
+  <i class="fa-regular fa-bars"></i>
   <div class="container-fluid">
       <div>
           <a class="fontfor_living"  href="#">
             <img src="./assets/images/favicon.jpg" height="50px" />&nbsp; Million Health Care
           </a>
       </div>
-      <div class="nav navbar-nav1">
+      <div class="nav navbar-nav1" >
           <a  (click)="home()" class="btn">Home</a>
           <a  class="btn" (click)="aboutus()">About us</a>
           <a  class="btn" (click)="product()">Products</a>
@@ -16,6 +17,12 @@
           <a class="btn" (click)="contact()">Contact</a>
       </div>
   </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
 </nav>
 <div *ngIf="homee == true">
   <app-initial-page></app-initial-page>
