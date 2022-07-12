@@ -14,9 +14,9 @@ export class AppComponent {
   neurology(){
     this.router.navigate(["/neurology"]);
   }
-  homee:boolean = true
+  // homee:boolean = true
   home(){
-    this.homee = false;
+    // this.homee = false;
     this.router.navigate(["/home"]);
   }
   product(){
