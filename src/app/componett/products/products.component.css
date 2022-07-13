@@ -77,3 +77,19 @@
     width: 102px;
     border-radius: 50%;
 }
+
+
+
+#loading {
+  -webkit-animation: rotation 2s infinite linear;
+  height: 40px;
+}
+
+@keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}
