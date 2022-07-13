@@ -1,9 +1,44 @@
+<!-- <nav class="mobile-menu">
+  
+  <label for="show-menu" class="show-menu">
+    <span>Menu</span>
+    <div class="lines"></div></label>
+    <input type="checkbox" id="show-menu">
+    <img src="./assets/images/favicon.jpg" height="50px" />
+      <ul id="menu">
+      <li><a (click)="home()">Home</a></li>
+      <li>			<a (click)="aboutus()">About Us</a>		</li>
+      <li>			<a (click)="product()">Products</a>		</li>
+      <li><a >Disease Profile</a></li>
+      <li><a >Gallery</a></li>
+      <li><a >Careers</a></li>
+      <li><a (click)="contact()">Contact</a></li>
 
-<nav class="navbar">
+    </ul>
+  </nav> -->
+<body>
+  <header>
+    <figure class="brand"><img src="./assets/images/favicon.jpg" height="50px" /></figure>
+    <nav class="menu">
+        <input type="checkbox" id="menuToggle">
+        <label for="menuToggle" class="menu-icon"><i id="blackiconcolor" class="fa fa-bars"></i></label>
+        <ul >
+          <a (click)="home()"><li>Home</li></a>
+          <a for="menuToggle" (click)="aboutus()"><li>About Us</li></a>
+          <a (click)="product()"><li>Products</li></a>
+          <!-- <a href="#"><li>Disease Profile</li></a> -->
+          <a href="#"><li>Gallery</li></a>
+          <a href="#"><li>Careers</li></a>
+          <a (click)="contact()"><li>Contact</li></a>
+        </ul>
+    </nav>
+</header>
+</body>
+<!-- <nav class="navbar">
   <div class="container-fluid">
       <div>
           <a class="fontfor_living"  href="#">
-            <img src="./assets/images/favicon.jpg" height="50px" />&nbsp; Million Health Care
+            <img src="./assets/images/favicon.jpg" height="50px" />&nbsp; 
           </a>
       </div>
       <div class="nav navbar-nav1" >
@@ -17,13 +52,12 @@
       </div>
   </div>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
   
-</nav>
+</nav> -->
 <!-- <div *ngIf="homee == true">
   <app-initial-page></app-initial-page>
 </div> -->
 <router-outlet></router-outlet>
+
+

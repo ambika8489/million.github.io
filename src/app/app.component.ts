@@ -27,6 +27,15 @@ export class AppComponent {
   }
   aboutus(){
     this.router.navigate(["/aboutus"]);
+    // menuToggle
+    // document.getElementById('menuToggle').display = hidden;
+    // var x = document.getElementById("menuToggle");
+    // console.log(x.style.display)
+    // if (x.style.display === "none" || x.style.display === "") {
+    //   x.style.display = "block";
+    // } else {
+    //   x.style.display = "none";
+    // }
 
   }
   public isCollapsed = true;

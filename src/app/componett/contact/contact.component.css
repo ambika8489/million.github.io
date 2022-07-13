@@ -1,0 +1,264 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: url("https://healthcorp.com.au/public/wp-content/uploads/2015/10/bg-grey-shapes.png");
+    background-size: cover;
+    font-family: 'Roboto Slab', serif;
+}
+/*animations */
+
+@keyframes turnOffLights {
+    0% {
+        background: white;
+    }
+    100% {
+        background: black;
+        width: 3000px;
+        height: 3000px;
+    }
+}
+@keyframes upsideDown {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+#intrerupator {
+    background: url("https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678078-light-bulb-256.png") center no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    cursor: pointer;
+}
+#text {
+    color: red;
+    position: fixed;
+    right: 3.4%;
+    top: 1.5%;
+    z-index: -2;
+}
+#intrerupator:focus {
+    animation-name: turnOffLights;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+header img {
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-name: upsideDown;
+    animation-delay: .5s;
+}
+img:hover {
+    animation-duration: .3s;
+    animation-name: upsidDown;
+}
+
+header img {
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+}
+#container {
+	position:absolute;
+	left:0;
+	right:0;
+	z-index:-1;
+    background: #fafafa;
+    width: 55%;
+    margin: 65px auto;
+    border: 1px solid;
+    border-radius: .5%;
+}
+header {
+    background: #9645c1;
+    text-align: center;
+    padding: 1%;
+    color: white;
+}
+form {
+    margin: 5% 2%;
+    display: flex;
+    justify-content: space-between;
+}
+#part-1,
+#part-2,
+#part-3 {
+    width: 33%;
+}
+fieldset {
+    border: 0px;
+}
+h3 {
+    font-size: 1rem;
+    text-align: center;
+}
+h3 span {
+    color: red;
+}
+.fa-address-book {
+    font-size: 40px;
+    color: #f47142;
+}
+legend {
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-bottom: 1px solid rgba(42 39 39 / 60%);
+    border-width: 2px;
+}
+input[type="text"],
+input[type="date"],
+input[type="number"],
+#country,
+input[type="email"],
+input[type="password"],
+textarea {
+    border: 1px solid #9645c1;
+    display: block;
+    margin: 10px auto;
+    padding: 2%;
+    width: 100%;
+}
+input[type="radio"] {
+    margin-top: 1.5%;
+}
+#submitButton {
+    background: #c1beba;
+    padding: 15px 10px;
+    cursor: pointer;
+    width: 80%;
+    height: 70px;
+    display: block;
+    margin: 6% auto;
+    margin-bottom: 5%;
+}
+#submitButton:hover {
+    filter: brightness(115%);
+}
+#resetButton {
+    background: #e24f2b;
+    padding: 15px 10px;
+    color: white;
+    cursor: pointer;
+    width: 80%;
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+}
+#resetButton:hover {
+    filter: brightness(115%);
+}
+#part-1 label:after {
+    content: " *";
+    color: red;
+}
+#part-2 label:after {
+    content: " *";
+    color: red;
+}
+textarea {
+    resize: none;
+}
+/*Media Query */
+
+@media all and (min-width: 0px) and (max-width: 320px) {
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    #container {
+        width: 90%;
+        margin-top: 20%;
+    }
+    #submitButton,
+    #resetButton {
+        width: 100%;
+    }
+}
+@media all and (min-width: 321px) and (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    #container {
+        width: 90%;
+        margin-top: 13%;
+    }
+   
+    #submitButton,
+    #resetButton {
+        width: 100%;
+    }
+}
+@media all and (min-width: 481px) and (max-width: 568px) {
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    #container {
+        width: 90%;
+        margin-top: 10%;
+    }
+   
+    #submitButton,
+    #resetButton {
+        width: 100%;
+    }
+}
+@media all and (max-width: 768px) {
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    #container {
+        width: 90%;
+        margin-top: 7%;
+    }
+   
+    form {
+        margin: 5% 2%;
+        display: flex;
+        flex-direction: column;
+        flex-flow: column wrap;
+    }
+    #part-1,
+    #part-2,
+    #part-3 {
+        width: 70%;
+    }
+   
+    
+}
+    
+@media all and (min-width: 767px) and (max-width: 1024px) {
+    #submitButton,
+    #resetButton {
+        width: 100%;
+    }
+    #container {
+        width: 90%;
+    }
+
+}
+
+
